@@ -1,0 +1,32 @@
+.item-list {
+  .item-list-count {
+
+  }
+
+  .item-list-items {
+
+  }
+
+  .item-list-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .item-list-actions-button {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(82, 82, 145);
+      .item-list-actions-button-text {
+        display: block;
+      }
+
+      .item-list-actions-button-image {
+        display: block;
+      }
+    }
+
+    
+  }
+}
