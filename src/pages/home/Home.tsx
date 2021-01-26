@@ -1,10 +1,12 @@
 import React from "react";
 
+import "./styles.scss";
+
 import ItemList from "../../components/ItemList/ItemList";
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <div className="home">
       <header className="home-header">
         <h1>Supermarket list</h1>
       </header>
