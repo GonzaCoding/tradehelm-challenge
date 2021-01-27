@@ -115,7 +115,9 @@ const ItemList: React.FC = () => {
   return (
     <div className="item-list">
       <div className="item-list-count">
-        <h2>{items.length > 0 ? items.length : 0} item(s)</h2>
+        <h2>
+          {items.length > 0 ? items.length : 0} {items.length === 1 ? "item" : "items"}
+        </h2>
       </div>
       <div className="item-list-items">
         {items &&
@@ -124,7 +126,7 @@ const ItemList: React.FC = () => {
           ))}
       </div>
       <div className="item-list-actions">
-        <button className="swal2-confirm swal2-styled" onClick={() => handleClickAddItem()}>
+        <button className="item-list-actions-button" onClick={() => handleClickAddItem()}>
           <p className="item-list-actions-button-text">Add item</p>
           <img
             className="item-list-actions-button-image"
