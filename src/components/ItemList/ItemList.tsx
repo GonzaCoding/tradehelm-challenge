@@ -32,7 +32,7 @@ const ItemList: React.FC = () => {
       preConfirm: (item) => {
         if (item) {
           return addItem(item)
-            .then((newItem) => {
+            .then(() => {
               fetchItems();
             })
             .catch((error) => {
