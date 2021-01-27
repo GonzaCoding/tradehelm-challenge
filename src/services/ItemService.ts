@@ -16,7 +16,7 @@ export function addItem(item: string): Promise<ItemType> {
         resolve({
           title: item,
         });
-      }, 2000);
+      }, 1000);
     } catch (error) {
       reject(error);
     }
@@ -46,7 +46,7 @@ export function deleteItem(index: number): Promise<ItemType[]> {
 
       setTimeout(() => {
         resolve(newItems);
-      }, 2000);
+      }, 1000);
     } catch (error) {
       reject(error);
     }
